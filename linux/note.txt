@@ -1,0 +1,31 @@
+首先我建立了一个数据库rdata，又建立了一个表
+create table conties(dates string,counties string,state string,cases int,deaths int)
+row format delimited fields terminated by ',';
+
+然后把数据导入到表里了
+load data local inpath '/home/hadoop/app/rdata/counties.csv' into table conties;
+
+查数据
+select * from conties;
+
+整个流程分为：
+数据采集
+数据清洗
+数据呈现
+ppt wrlod
+
+整个流程
+数据清洗，数据呈现有些困难
+
+0：蓝
+1：绿
+2：红
+
+hbase
+高可靠， 高性能， 高存储，可伸缩，分布式
+本地， 伪分布， 分布式
+运行模式：独立，伪分布， 分布式
+
+
+list
+disc 查看版本
